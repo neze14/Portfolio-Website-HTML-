@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* scrollbar */
+::-webkit-scrollbar{
+    height: 4px;
+    width: 6px;
+}
+::-webkit-scrollbar-track{
+    border-radius: 4px;
+    margin-block: .5em;
+    background-color: #222;
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#2d3f57, hsl(197, 11%, 12%));
+    border-radius: 6px;
+}
+
+body {
+    background-color: #333;
+    color: white;
+}
+
+section{
+    margin-bottom: 10px;
+}
+
+.navbar {
+    padding: 10px
+}
+.navbar-brand > .navbar-item, .footer-item {
+    word-spacing: .2em;
+    letter-spacing: 1em;
+    font-family: 'Young Serif', serif;
+}
+.navbar-end > a{
+    font-weight: bold;
+}
+
+/*2d animations*/
+header{
+    margin:auto;
+    padding: 1rem;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.vid{margin-bottom: 3rem;}
+.vid > .columns{
+    display: flex;
+    flex-direction: row;
+    margin:auto;
+    align-items: center;
+    justify-content: center;
+}
+/*2d animations*/
+
+/*3d modelling*/
+header > .title {
+    padding-bottom: 20px;
+}
+.btn-container{
+    padding: 2rem 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.gallery{
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+.gallery-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+#render{
+    display: flex;
+}
+#animations{
+    display: none;
+}
+.gallery-div{
+    display: flex;
+    flex-direction: column;
+    width: 32.5%; 
+}
+.gallery-div img{
+    width: 100%; 
+    padding-bottom: 20px;
+}
+.tabs > li{
+    color: white;
+}
+
+
+@media only screen and (max-width: 769px) {
+    .gallery{
+        flex-direction: column;
+    }
+    .gallery-2{
+        flex-direction: column;
+    }
+    .gallery-div{
+        width: 85%; 
+        align-self: center;
+    }
+    .gallery-div img {
+        min-width: 250px;
+    }
+}
+/*3d modelling*/
+
+/*drawing
+.trad{
+    line-height: 5px;
+}*/
+
+/*home*/
+.hero {
+    background-image: url('../src/img/forHomePage/monkey_loki.png');
+    background-size: cover;
+    background-position: center center;
+    height:fit-content;
+}
+.hero-body{
+    display: block;
+    align-items: center;
+    margin: 150px 150px;
+}
+
+.cards-container{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: fit-content;
+}
+.card-head{
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*
+.card-head::before{
+    content: "Explore my work!";
+    position: relative;
+    width: 13%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+}*/
+.cards {
+    display:flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 300px;
+    margin:10px;
+    transition: all .50s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.about-me{
+    margin-bottom: 0;
+    padding:15px;
+}
+
+.foot{
+    padding: 3rem 1.5rem 3rem;
+}
+.copyright{
+    margin-top: 15px;
+    font-family: 'Young Serif', serif;
+    font-size:12px;
+}
+.fa-brands{
+    color: white;
+}
+.fa-brands:hover{
+    color: rgb(73, 53, 53);
+}
+/*home*/
+
+/*Media Queries*/
+@media screen and (max-width: 1023px) {
+    .navbar-menu.is-active {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .hero-body{
+        font-size:16px;
+        margin: 40px 40px;
+    }
+    .footer-item, .copyright {
+        font-size: 12px;
+    }
+    .vid > .columns{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .navbar-brand > .navbar-item{
+        font-size:12px;
+    }
+    .hero-body{
+        font-size:16px;
+    }
+    .cards{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .navbar-brand > .navbar-item{
+        font-size:10px;
+    }
+    .hero-body{
+        font-size:16px;
+        height: fit-content;
+        margin: 10px;
+    }
+}

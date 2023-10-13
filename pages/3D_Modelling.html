@@ -5,95 +5,128 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/add.css">
     <script src="https://kit.fontawesome.com/f57e08863d.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.0.0/fonts/remixicon.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
     <!--font start -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <title>Chineze Okadigbo | 3D </title>
+    <link rel="icon" type="image/x-icon" href="../src/logo/logo.ico">
     <meta name="description" content="Welcome to my portfolio! ;) ">
 </head>
 
-<body class="layout-default">
-    <nav>
-        <a href="/Home.html"><img src="/src/logo/logo_black-removebg-preview.png" width="250" height="28"></a>
+<body>
+    <nav class="navbar is-black" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <a class="navbar-item" href="/Home.html">CHINEZE OKADIGBO</a>
 
-        <a href="/Home.html">Home</a>
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
 
-        <a href="/pages/3D_Modelling_main.html">3D Modelling (Blender)</a>
-        
-        <a href="/pages/2D_Animations.html">2D Animations</a>
+        <div class="navbar-menu" id="navMenu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="/pages/3D_Modelling.html">3D MODELLING</a>
+                <a class="navbar-item" href="/pages/2D_Animations.html">2D ANIMATIONS</a>
+                <a class="navbar-item" href="/pages/Drawings.html">DRAWINGS</a>
+                <a class="navbar-item" href="https://linktr.ee/_chinezeokadigbo">SOCIAL</a>
+            </div>
+        </div>
 
-        <a href="/pages/Drawings.html">Drawings</a>
-
-        <a href="https://linktr.ee/_chinezeokadigbo">Social</a>
-        
-        <a href="/pages/Resume.html">About me</a>
     </nav>
 
-    <section class="section">
-        <p class="title"> 3D Modelling</p>
-        <p class="subtitle"> Most of my work is done in Blender with video post-production in Davinci Resolve. </p>
-    </section>
-    
-    <section class="section">
-        <div class="tabs is-left is-boxed">
-            <ul>
-                <li class="is-active">
-                    <a href="/pages/3D_Modelling_main.html">
-                        <span class="icon is-small"><i class="fas fa-image" aria-hidden="true"></i></span>
-                        <span>Images</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="/pages/3D_Modelling_2.html">
-                        <span class="icon is-small"><i class="fas fa-film" aria-hidden="true"></i></span>
-                        <span>Animations</span>
-                    </a>
-                </li>
-            </ul>
+    <header>
+        <p class="title has-text-centered has-text-link-light"> 3D Modelling</p>
+        <p class="subtitle has-text-link-light"> Most of my work is done in Blender with video post-production in
+            Davinci Resolve. </p>
+    </header>
+
+    <section>
+        <div class="btn-container has-text-centered">
+            <input type="checkbox" id="favorite" name="favorite-checkbox" value="favorite-button">
+            <label for="favorite" class="container">
+                <div class="action">
+                    <span class="option-1">IMAGES</span>
+                    <span class="option-2">ANIMATIONS</span>
+                </div>
+            </label>
         </div>
 
-        <div class="columns has-text-centered">
-            <div class="column">
-              First column
+        <div class="gallery" id="renders">
+            <div class="gallery-div">
+                <img src="https://cdnb.artstation.com/p/assets/images/images/045/754/779/smaller_square/chineze-okadigbo-head3.jpg?1643455236"
+                    alt="Distopian Head">
+                <img src="https://cdnb.artstation.com/p/assets/images/images/045/779/703/small/chineze-okadigbo-3-jan-1.jpg?1643531384"
+                    alt="Ad Astra Red">
+                <img src="https://cdnb.artstation.com/p/assets/images/images/043/273/869/smaller_square/chineze-okadigbo-environment-complete.jpg?1636803931"
+                    alt="Injured Woman (Sci-fi envionment)">
+                <img src="../src/img/3d/Mirror Man 1.png" alt="Mirror Man (2022)">
             </div>
-            <div class="column">
-              Second column
+            <div class="gallery-div">
+                <img src="../src/img/3d/The Balance Red 2-01.jpeg" alt="The Balance">
+                <img src="https://www.instagram.com/p/CeGZBDNMVs9/" alt="Glass Loop">
+                <img src="../src/img/3d/abstract.png" alt="Glow Circle">
+                <img src="../src/img/3d/ad astra 2.png" alt="Ad Astra Blue">
             </div>
-            <div class="column">
-              Third column
+            <div class="gallery-div">
+                <img src="https://www.instagram.com/p/CbClZJRM98A/" alt="Blue Orb">
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
             </div>
-            
+        </div>
+
+        <div class="gallery" id="animation">
+            <div class="gallery-div">
+                <img src="https://cdnb.artstation.com/p/assets/images/images/045/779/703/small/chineze-okadigbo-3-jan-1.jpg?1643531384"
+                    alt="Ad Astra Red">
+                <img src="https://cdnb.artstation.com/p/assets/images/images/045/754/779/smaller_square/chineze-okadigbo-head3.jpg?1643455236"
+                    alt="Distopian Head">
+                <img src="https://cdnb.artstation.com/p/assets/images/images/043/273/869/smaller_square/chineze-okadigbo-environment-complete.jpg?1636803931"
+                    alt="Injured Woman (Sci-fi envionment)">
+                <img src="../src/img/3d/Mirror Man 1.png" alt="Mirror Man (2022)">
+            </div>
+            <div class="gallery-div">
+                <img src="../src/img/3d/The Balance Red 2-01.jpeg" alt="The Balance">
+                <img src="https://www.instagram.com/p/CeGZBDNMVs9/" alt="Glass Loop">
+                <img src="../src/img/3d/abstract.png" alt="Glow Circle">
+                <img src="../src/img/3d/ad astra 2.png" alt="Ad Astra Blue">
+            </div>
         </div>
 
     </section>
-    
-    <div class="footer">
-        <img src="/src/logo/logo white.png" width="250" height="28">
 
-        <h4>Copyright <span class="icon"><i class="fa-regular fa-copyright"></i></span> 2022 </h4>
-       
-        <a class="icon" href="https://www.instagram.com/_chinezeokadigbo">
-            <span class="icon-text">
-                <span class="icon"><i class="fa-brands fa-instagram"></i>Instagram</span>
-            </span>
-        </a>
-        <a class="icon" href="https://www.youtube.com/c/ChinezeOkadigboArt">
-            <span class="icon-text">
-                <span class="icon"><i class="fa-brands fa-youtube"></i>YouTube</span>
-            </span>
-        </a>
-        <a class="icon" href="http://tiktok.com/@chinezeokadigbo">
-            <span class="icon-text">
-                <span class="icon"><i class="fa-brands fa-tiktok"></i>TikTok</span>
-            </span>
-        </a>
-    </div>
+    <footer class="foot has-background-black">
+        <div class="content has-text-centered">
+            <a class="footer-item has-text-link-light" href="/Home.html">CHINEZE OKADIGBO</a>
+
+            <h4 class="copyright has-text-link-light">Copyright <span class="icon"><i
+                        class="fa-regular fa-copyright"></i></span> 2022 </h4>
+
+            <div class="row">
+                <a class="icon" href="https://www.instagram.com/_chinezeokadigbo">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="icon" href="https://www.youtube.com/c/ChinezeOkadigboArt">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a class="icon" href="http://tiktok.com/@chinezeokadigbo">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../home.js" type="text/javascript"></script>
 
 </body>
 

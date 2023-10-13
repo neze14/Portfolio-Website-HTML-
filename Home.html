@@ -17,124 +17,111 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <title>Chineze Okadigbo | Home </title>
-    <link rel="icon" type="image/x-icon" href="src/img/logo.ico">
+    <link rel="icon" type="image/x-icon" href="./src/logo/logo.ico">
     <meta name="description" content="Welcome to my portfolio! ;) ">
 </head>
 
 <body>
     <nav class="navbar is-black" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a href="/Home.html"><img src="/src/logo/logo_black-removebg-preview.png" width="250" height="28"></a>
+            <a class="navbar-item" href="/Home.html">CHINEZE OKADIGBO</a>
+
+            <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
         </div>
 
-        <div class="navbar-menu">
+        <div class="navbar-menu" id="navMenu">
             <div class="navbar-end">
-                <a class="navbar-item" href="/Home.html">Home</a>
-                <a class="navbar-item" href="/pages/3D_Modelling.html">3D Modelling (Blender)</a>
-                <a class="navbar-item" href="/pages/2D_Animations.html">2D Animations</a>
-                <a class="navbar-item" href="/pages/Drawings.html">Drawings</a>
-                <a class="navbar-item" href="https://linktr.ee/_chinezeokadigbo">Social</a>
+                <a class="navbar-item" href="/pages/3D_Modelling.html">3D MODELLING</a>
+                <a class="navbar-item" href="/pages/2D_Animations.html">2D ANIMATIONS</a>
+                <a class="navbar-item" href="/pages/Drawings.html">DRAWINGS</a>
+                <a class="navbar-item" href="https://linktr.ee/_chinezeokadigbo">SOCIAL</a>
             </div>
-
-
         </div>
+
     </nav>
 
-    <section id="hero_image">
-        <div class="hero is-large">
-            <div class="hero-body has-text-centered">
-                <h1 class="l-heading is-white " style="font-family:Georgia, 'Times New Roman', Times, serif ;">
-                    Chineze Okadigbo
-                </h1>
-                <p class="is-slim" style="font-family:Georgia, 'Times New Roman', Times, serif ;">
-                    ...a Nigerian multimedia artist
-                </p>
-                <a href="/pages/Resume.html"><Button class="button is-rounded has-text-black has-background-white">About
-                        me</Button></a>
+    <section class="hero ">
+        <div class="hero-body has-text-centered">
+            <p class="title has-text-link-light">
+                Chineze Okadigbo
+            </p>
+            <p class="subtitle has-text-link-light">
+                ...a Nigerian multimedia artist
+            </p>
+            <a href="#about-me">
+                <Button class="button is-rounded has-text-black has-background-white">
+                    About me</Button>
+            </a>
+            <a href="#work">
+                <Button class="button is-rounded has-text-black has-background-white">
+                    Explore!</Button>
+            </a>
+        </div>
+    </section>
+
+    <section class="cards-container" id="work">
+        <div class="card-head">
+            <h1>Explore my work!</h1>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <a class="card-image" href="/pages/3D_Modelling_main.html">
+                    <figure class="image">
+                        <img src="/src/img/forHomePage/3d_bg.png">
+                    </figure>
+                </a>
+            </div>
+            <div class="card">
+                <a class="card-image" href="/pages/2D_Animations.html">
+                    <figure class="image">
+                        <img src="src/img/forHomePage/2d_bg.png">
+                    </figure>
+                </a>
+            </div>
+            <div class="card">
+                <a class="card-image" href="/pages/Drawings.html">
+                    <figure class="image">
+                        <img src="src/img/forHomePage/trad_bg.png">
+                    </figure>
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="hero-image">
-        <div>
-            <div class="hero-text">
-                <h1 style="font-size:50px">Chineze Okadigbo</h1>
-                <p> ...a Nigerian multimedia artist</p>
-                <button class="btn">
-                    <a href="pages/Resume.html">About me</a>
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <section class="cards">
-        <a class="tile is-child" href="/pages/3D_Modelling_main.html">
-            <figure class="image">
-                <img src="/src/img/forHomePage/3d_bg.png">
-            </figure>
-        </a>
-
-        <a class="tile is-child" href="/pages/2D_Animations.html">
-            <figure class="image is-1by1">
-                <img src="src/img/forHomePage/2d_bg.png">
-            </figure>
-        </a>
-
-        <a class="tile is-child " href="/pages/Drawings.html">
-            <figure class="image is-1by1">
-                <img src="src/img/forHomePage/trad_bg.png">
-            </figure>
-        </a>
-    </section>
-
-    <section class="about-me" id="about-me">
-        <div class="row">
-            <div class="column">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media-content">
-                            <p class="title is-4">Chineze Okadigbo</p>
-                            <p><span class="icon">
-                                    <i class="fa-solid fa-map-location-dot"></i>
-                                </span> Lagos, Nigeria
-                                </h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="column">
-                <h1 class="title"> Summary</h1>
-                <p class="subtitle">
-                    I have a year of experience working with Blender 3D software.
-                    During this time, I have learnt a lot and have greatly improved my skills through various tutorial
-                    and personal projects.
-                    I aspire to further my skills in more practical situations, such as engineering, in the future.
-                </p>
-                <p class="subtitle">
-                    I have a deep fascination in science fiction and Formula 1 which has greatly influenced most of my
-                    original work till date.
-                    I am a student with a YouTube channel (Chineze Okadigbo) where I showcase my art skills. I am
-                    interested in traditional dry art with a focus on realism.
-                    I am also interesteed in 3D art and animation, and 2D animation.
-                </p>
-                <p class="subtitle">YouTube: <a href="https://www.youtube.com/c/ChinezeOkadigboArt">Chineze Okadigbo</a>
-                </p>
-                <p class="subtitle"> Instagram: <a
-                        href="https://www.instagram.com/_chinezeokadigbo">@_chinezeokadigbo</a></p>
-            </div>
+    <section class="about-me has-background-white" id="about-me">
+        <div class="column">
+            <h1 class="title"> Summary</h1>
+            <p class="subtitle">
+                I have a year of experience working with Blender 3D software.
+                During this time, I have learnt a lot and have greatly improved my skills through various tutorial
+                and personal projects.
+                I aspire to further my skills in more practical situations, such as engineering, in the future.
+            </p>
+            <p class="subtitle">
+                I have a deep fascination in science fiction and Formula 1 which has greatly influenced most of my
+                original work till date.
+                I am a student with a YouTube channel (Chineze Okadigbo) where I showcase my art skills. I am
+                interested in traditional dry art with a focus on realism.
+                I am also interesteed in 3D art and animation, and 2D animation.
+            </p>
+            <p class="subtitle"><span class="icon">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                </span> Lagos, Nigeria
+            </p>
+            <p class="subtitle">YouTube: <a href="https://www.youtube.com/c/ChinezeOkadigboArt">Chineze Okadigbo</a>
+            </p>
+            <p class="subtitle"> Instagram: <a href="https://www.instagram.com/_chinezeokadigbo">@_chinezeokadigbo</a>
+            </p>
         </div>
 
         <div class="row">
+            <!--
             <div class="column">
-
-                <h1 class="title">Skills and Software</h1>
+                <h1 class="title">Skills</h1>
                 <div class="row">
                     <div class="column">
                         <ul>
@@ -145,11 +132,15 @@
                     </div>
 
                     <div class="column">
-                        <button class="button is-rounded has-background-grey-light">Blender</button>
-                        <button class=" button is-rounded has-background-grey-light">Davinci Resolve</button>
+                        <h1 class="title">Software</h1>
+                        <ul>
+                            <li><button class="button is-rounded has-background-grey-light">Blender</button></li>
+                            <li><button class=" button is-rounded has-background-grey-light">Davinci Resolve</button></li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        -->
 
             <div class="column">
                 <h1 class="title"> Work Experience </h1>
@@ -166,27 +157,28 @@
         </div>
     </section>
 
-    <div class="footer">
-        <img src="/src/logo/logo white.png" width="250" height="28">
+    <footer class="foot has-background-black">
+        <div class="content has-text-centered">
+            <a class="footer-item has-text-link-light" href="/Home.html">CHINEZE OKADIGBO</a>
 
-        <h4>Copyright <span class="icon"><i class="fa-regular fa-copyright"></i></span> 2022 </h4>
+            <h4 class="copyright has-text-link-light">Copyright <span class="icon"><i
+                        class="fa-regular fa-copyright"></i></span> 2022 </h4>
 
-        <a class="icon" href="https://www.instagram.com/_chinezeokadigbo">
-            <span class="icon-text">
-                <span class="icon"><i class="fa-brands fa-instagram"></i>Instagram</span>
-            </span>
-        </a>
-        <a class="icon" href="https://www.youtube.com/c/ChinezeOkadigboArt">
-            <span class="icon-text">
-                <span class="icon"><i class="fa-brands fa-youtube"></i>YouTube</span>
-            </span>
-        </a>
-        <a class="icon" href="http://tiktok.com/@chinezeokadigbo">
-            <span class="icon-text">
-                <span class="icon"><i class="fa-brands fa-tiktok"></i>TikTok</span>
-            </span>
-        </a>
-    </div>
+            <div class="row">
+                <a class="icon" href="https://www.instagram.com/_chinezeokadigbo">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a class="icon" href="https://www.youtube.com/c/ChinezeOkadigboArt">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+                <a class="icon" href="http://tiktok.com/@chinezeokadigbo">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./home.js" type="text/javascript"></script>
 
 </body>
 
